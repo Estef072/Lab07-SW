@@ -1,11 +1,13 @@
 import { prueba2 } from "./P3";
+import imagen1 from "../fotos/nieve.jpg"
 
 export const prueba1 = () =>{
-document.body.innerHTML = "";
+    document.body.innerHTML = "";
 const story = document.createElement('story');
 story.innerHTML = `
 <div class="container">
         <article>
+            <h2>Nieve por todos lados ...</h2>
             <p class="text-white">
             Amo correr en el parque, sobre todo en estas épocas, cuando la niebla no me permite ver lo que tengo enfrente, si hay
             alguien más ahí, ni siquiera lo noto; me encuentro sola, disfrutando del mundo, de mi vida... ¡mi libertad!. Cada paso está lleno
@@ -17,13 +19,16 @@ story.innerHTML = `
             no tenía nada de particular.
             </p>
         </article>
-        <img src="../fotos/nieve.jpg" alt="Parque" width="350" height="300">
+       
         
      
 </div>
 `
 
 document.body.appendChild(story);
+let im = document.createElement("img");
+im.src= imagen1
+document.body.appendChild(im);
 let ruta = document.createElement('button');
 ruta.innerHTML = "leer mas...";
 ruta.onmousedown =function(){prueba2 ()}

@@ -1,3 +1,7 @@
+import { prueba1 } from "./P2";
+import imagen1 from "../fotos/acechar.jpg"
+export const prueba4 = () =>{
+    document.body.innerHTML = "";
 const story = document.createElement('story');
 story.innerHTML = `
 <div class="container">
@@ -10,13 +14,13 @@ story.innerHTML = `
             mi boca.
             </p>
         </article>
-        <img src="../fotos/noche.jpg" alt="Parque" width="350" height="300">
-        <ul>
-            <li>
-                <a href="index.html">Regresar al principio</a>
-            </li>
-        </ul>
      
 </div>
 `
 document.body.appendChild(story);
+document.body.appendChild(story);
+let im = document.createElement("img");
+im.src= imagen1
+document.body.appendChild(im);
+document.body.appendChild(story);
+}

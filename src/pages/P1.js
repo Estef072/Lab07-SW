@@ -1,4 +1,5 @@
 import { prueba1 } from "./P2";
+import imagen1 from "../fotos/noche.jpg"
 
 export const prueba = () =>{
     document.body.innerHTML = "";
@@ -16,11 +17,15 @@ story.innerHTML = `
             esfuerzo.
             </p>
         </article>
-        <img src="../fotos/noche.jpg" alt="Parque" width="350" height="300">
 
 </div>
+
 `
+
 document.body.appendChild(story);
+let im = document.createElement("img");
+im.src= imagen1
+document.body.appendChild(im);
 let ruta = document.createElement('button');
 ruta.innerHTML = "Continuar historia";
 ruta.onmousedown =function(){prueba1 ()}

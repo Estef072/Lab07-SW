@@ -1,3 +1,5 @@
+import { prueba4 } from "./P5";
+import imagen1 from "../fotos/volar.jpg"
 export const prueba3 = () =>{
     document.body.innerHTML = "";
 const story = document.createElement('story');
@@ -14,17 +16,14 @@ story.innerHTML = `
             alcanzando tanta velocidad, que mis colmillos generan silbidos...
             </p>
         </article>
-        <img src="../fotos/volar.jpg" alt="Parque" width="350" height="300">
-        <ul>
-            <li>
-                <a href="parte4.html">Ya casi acaba</a>
-            </li>
-        </ul>
+
      
 </div>
 `
 document.body.appendChild(story);
-document.body.appendChild(story);
+let im = document.createElement("img");
+im.src= imagen1
+document.body.appendChild(im);
 document.body.appendChild(story);
 let ruta = document.createElement('button');
 ruta.innerHTML = "Ya casi acaba...";

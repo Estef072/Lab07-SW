@@ -1,3 +1,5 @@
+import { prueba3 } from "./P4"; 
+import imagen1 from "../fotos/pies.jpg"
 export const prueba2 = () =>{
 document.body.innerHTML = "";
 const story = document.createElement('story');
@@ -16,13 +18,16 @@ story.innerHTML = `
             luego perdí nuevamente la consciencia.
             </p>
         </article>
-        <img src="../fotos/pies.jpg" alt="Pies flotando" width="350" height="300">
+      
     
 
 </div>
 `
 
 document.body.appendChild(story);
+let im = document.createElement("img");
+im.src= imagen1
+document.body.appendChild(im);
 document.body.appendChild(story);
 let ruta = document.createElement('button');
 ruta.innerHTML = "mas...";
